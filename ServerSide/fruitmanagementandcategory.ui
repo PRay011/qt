@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FruitManagementAndCategory</class>
+ <widget class="QWidget" name="FruitManagementAndCategory">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1001</width>
+    <height>701</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+background-color:rgb(255, 255, 255);
+border:sold 10px rgba(0,0,0);
+
+
+}
+#frame_2{
+border-image:url(:/Picture/01.JPG)
+}
+
+QPushButton{
+background:rgb(255, 255, 255);
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+font-size:20px;
+color:black;
+}
+QPushButton:pressed{
+background-color:rgb(255, 255, 255);
+border-style:inset;
+font-style:MingLiU-ExtB;
+}
+QCheckBox{
+background:rgba(85,170,255,0);
+color:white;
+font-style:MingLiU-ExtB;
+}
+QLabel{
+color:rgb(35, 33, 34);
+font-style:MingLiU-ExtB;
+font-size:20px;
+background-image:rgb(255, 255, 255);
+}
+
+QTableWidget{
+	color:black;
+
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QTableWidget" name="FruitTable">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>140</y>
+      <width>881</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:black;
+background-color:white;
+background:rgba(85,170,255,0);
+
+</string>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>编号</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文楷体</family>
+       <pointsize>17</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>类别</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文楷体</family>
+       <pointsize>17</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>名称</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文楷体</family>
+       <pointsize>17</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>价格</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文楷体</family>
+       <pointsize>17</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>销量</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文楷体</family>
+       <pointsize>17</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>库存</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文楷体</family>
+       <pointsize>17</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>批量删除</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文楷体</family>
+       <pointsize>17</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+background-color:rgb(255, 255, 255);
+border:sold 10px rgba(0,0,0);
+background:rgba(85,170,255,0);
+}
+
+QPushButton{
+background:rgb(255, 255, 255);
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+font-size:20px;
+color:black;
+}
+QPushButton:pressed{
+background-color:rgb(255, 255, 255);
+border-style:inset;
+font-style:MingLiU-ExtB;
+}
+QCheckBox{
+background:rgba(85,170,255,0);
+color:white;
+font-style:MingLiU-ExtB;
+}
+QLabel{
+color:rgb(0, 0, 0);
+font: 20pt &quot;华文楷体&quot;;
+background:rgba(85,170,255,0);
+}
+
+QTableWidget{
+	color:black;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>281</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgba(85,170,255,0);</string>
+     </property>
+     <property name="text">
+      <string>水果分类与管理</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="Add">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>640</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(218, 218, 218);</string>
+    </property>
+    <property name="text">
+     <string>添加</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Delete">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>640</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(218, 218, 218);</string>
+    </property>
+    <property name="text">
+     <string>删除</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Save">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>640</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(218, 218, 218);</string>
+    </property>
+    <property name="text">
+     <string>保存</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Searching">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>751</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+color:black;
+background-color:white;
+border:1px solid rgb(0, 0, 0);
+background:rgba(85,170,255,0);
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Search">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>90</y>
+      <width>89</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>搜索</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="show">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>640</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(218, 218, 218);</string>
+    </property>
+    <property name="text">
+     <string>显示表格</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

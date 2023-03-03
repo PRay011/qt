@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FruitManagementAndCategory</class>
+ <widget class="QWidget" name="FruitManagementAndCategory">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1001</width>
+    <height>701</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+background-color:rgb(255, 255, 255);
+border:sold 10px rgba(0,0,0);
+
+
+}
+#frame_2{
+border-image:url(:/Picture/Fruit02.JPG)
+}
+
+QPushButton{
+background:rgb(255, 255, 255);
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+font-size:20px;
+color:black;
+}
+QPushButton:pressed{
+background-color:rgb(255, 255, 255);
+border-style:inset;
+font-style:MingLiU-ExtB;
+}
+QCheckBox{
+background:rgba(85,170,255,0);
+color:white;
+font-style:MingLiU-ExtB;
+}
+QLabel{
+color:rgb(35, 33, 34);
+font-style:MingLiU-ExtB;
+font-size:20px;
+background-image:rgb(255, 255, 255);
+}
+
+QTableWidget{
+	color:black;
+
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+background-color:rgb(255, 255, 255);
+border:sold 10px rgba(0,0,0);
+background:rgba(85,170,255,0);
+}
+
+QPushButton{
+background:rgba(255,255,255,0);
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+font-size:20px;
+color:black;
+}
+QPushButton:pressed{
+background-color:rgb(255, 255, 255);
+border-style:inset;
+font-style:MingLiU-ExtB;
+}
+QCheckBox{
+background:rgba(85,170,255,0);
+color:white;
+font-style:MingLiU-ExtB;
+}
+QLabel{
+color:rgb(0, 0, 0);
+font: 20pt &quot;华文楷体&quot;;
+background:rgba(85,170,255,0);
+}
+
+QTableWidget{
+	color:black;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>281</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgba(85,170,255,0);</string>
+     </property>
+     <property name="text">
+      <string>水果展台</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="InInventory">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>10</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 15pt &quot;华文楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>按库存排序</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="InSale">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>10</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 15pt &quot;华文楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>按销量排序</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="InPrice">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>10</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 15pt &quot;华文楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>按价格排序</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="Search">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>90</y>
+      <width>141</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>搜索水果类别</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NextPage">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>620</y>
+      <width>89</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 15pt &quot;华文楷体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>下一页</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PreviousPage">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>610</y>
+      <width>89</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 15pt &quot;华文楷体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>上一页</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>530</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(85,170,255,0);
+
+font: 15pt &quot;华文楷体&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>水果种类：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Category">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>530</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(85,170,255,0);
+
+font: 15pt &quot;华文楷体&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>530</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(85,170,255,0);
+
+font: 15pt &quot;华文楷体&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>水果名称：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Name">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>530</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(85,170,255,0);
+
+font: 15pt &quot;华文楷体&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>590</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(85,170,255,0);
+
+font: 15pt &quot;华文楷体&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>价格：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Price">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>590</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(85,170,255,0);
+
+font: 15pt &quot;华文楷体&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>600</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(85,170,255,0);
+
+font: 15pt &quot;华文楷体&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>销量：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Sale">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>600</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(85,170,255,0);
+
+font: 15pt &quot;华文楷体&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>600</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(85,170,255,0);
+
+font: 15pt &quot;华文楷体&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>库存：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Inventory">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>600</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(85,170,255,0);
+
+font: 15pt &quot;华文楷体&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Searching">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>90</y>
+      <width>471</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+color:black;
+background-color:white;
+border:1px solid rgb(0, 0, 0);
+background:rgba(85,170,255,0);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PictureLabel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>140</y>
+      <width>601</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(85,170,255,0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Picture">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>140</y>
+      <width>601</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(85,170,255,0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Picture/category.png</file>
+        <file>Picture/chat.png</file>
+        <file>Picture/enroll1.jpg</file>
+        <file>Picture/fruitmanage.png</file>
+        <file>Picture/image1.jpg</file>
+        <file>Picture/image2.jpg</file>
+        <file>Picture/image3.jpg</file>
+        <file>Picture/login.jpg</file>
+        <file>Picture/login2.jpg</file>
+        <file>Picture/manageandcategory.jpg</file>
+        <file>Picture/notice.png</file>
+        <file>Picture/ordermanagement.jpg</file>
+        <file>Picture/orderto.png</file>
+        <file>Picture/pic1.jpg</file>
+        <file>Picture/pic2.jpg</file>
+        <file>Picture/pic3.jpg</file>
+        <file>Picture/pic4.jpg</file>
+        <file>Picture/pic5.jpg</file>
+        <file>Picture/self.png</file>
+        <file>Picture/apple.JPG</file>
+        <file>Picture/peer.JPG</file>
+        <file>Picture/peach.JPG</file>
+        <file>Picture/Enroll.JPG</file>
+        <file>Picture/FRUIT.JPG</file>
+        <file>Picture/Fruit02.JPG</file>
+        <file>../ServerSide/Picture/watermelon.JPG</file>
+        <file>Picture/watermelon.JPG</file>
+        <file>Picture/pineapple.JPG</file>
+        <file>Picture/grape.JPG</file>
+        <file>Picture/durian.JPG</file>
+        <file>Picture/strawberry.JPG</file>
+        <file>Picture/hamimelon.JPG</file>
+        <file>Picture/noimage.JPG</file>
+    </qresource>
+</RCC>

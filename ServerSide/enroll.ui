@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Enroll</class>
+ <widget class="QWidget" name="Enroll">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>781</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+background:rgb(255, 255, 255);
+font-size:15px;
+font-style:MingLiU-ExtB;
+}
+#frame{
+border:sold 10px rgba(0,0,0);
+border-image:url(:/Picture/ENROLL01.JPG) ;
+}
+QLineEdit{
+color:rgb(2, 2, 2);
+background-color:rgb(255, 255, 255);
+font-size:16px;
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+}
+QPushButton{
+background:#ced1d8;
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+}
+QPushButton:pressed{
+background-color:rgb(224,0,0);
+border-style:inset;
+font-style:MingLiU-ExtB;
+}
+QCheckBox{
+background:rgba(85,170,255,0);
+color:white;
+font-style:MingLiU-ExtB;
+}
+QLabel{
+color:white;
+font-style:MingLiU-ExtB;
+font-size:70px;
+background:rgb(255,0,0,0);
+}
+QToolButton{
+background:rgb(200, 198, 198);
+border-style:outset;
+border-radius:10px;
+font-style:MingLiU-ExtB;
+}
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>781</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="Account">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>200</y>
+      <width>301</width>
+      <height>43</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>昵称</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Password">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>270</y>
+      <width>301</width>
+      <height>43</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>密码</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Enrollnew">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>340</y>
+      <width>301</width>
+      <height>43</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>注册</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Welcome">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>281</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>欢迎注册</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="Shrink">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="Close">
+    <property name="geometry">
+     <rect>
+      <x>755</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
